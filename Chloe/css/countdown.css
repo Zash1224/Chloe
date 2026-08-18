@@ -1,0 +1,1027 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+body {
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Display",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+
+    color: #3c342f;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8f1e8,
+            #fffdf9,
+            #f3e9df
+        );
+
+    min-height: 100dvh;
+
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.countdown-page {
+
+    min-height: 100dvh;
+
+    width: 100%;
+
+    padding:
+        30px
+        30px
+        70px;
+
+    overflow-x: hidden;
+
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.top-nav {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin:
+        0 auto
+        30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.back-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding:
+        10px
+        17px;
+
+    border-radius: 100px;
+
+    border:
+        1px solid
+        rgba(80, 60, 45, .15);
+
+    background:
+        rgba(255,255,255,.65);
+
+    color: #4a4039;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition:
+        transform .25s ease,
+        background .25s ease,
+        box-shadow .25s ease;
+
+}
+
+
+.back-button:hover {
+
+    transform:
+        translateY(-2px);
+
+    background:
+        white;
+
+    box-shadow:
+        0 8px 25px
+        rgba(80,60,45,.08);
+
+}
+
+
+.nav-title {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 18px;
+
+    color: #66564c;
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.page-header {
+
+    text-align: center;
+
+    max-width: 800px;
+
+    margin:
+        20px auto
+        35px;
+
+}
+
+
+.tiny-heart {
+
+    font-size: 28px;
+
+    color: #9c756b;
+
+    margin-bottom: 8px;
+
+}
+
+
+.page-header h1 {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-weight: 400;
+
+    font-size:
+        clamp(
+            36px,
+            6vw,
+            68px
+        );
+
+    letter-spacing:
+        -.035em;
+
+    line-height: 1.05;
+
+    color: #41362f;
+
+}
+
+
+.page-header p {
+
+    margin-top: 15px;
+
+    font-size: 16px;
+
+    color: #84766d;
+
+}
+
+
+/* =========================================================
+   FEATURED COUNTDOWN
+========================================================= */
+
+.featured-countdown {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 1050px;
+
+    min-height: 390px;
+
+    margin:
+        0 auto
+        55px;
+
+    overflow: hidden;
+
+    border-radius: 42px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.94),
+            rgba(248,239,230,.9)
+        );
+
+    border:
+        1px solid
+        rgba(100,75,55,.08);
+
+    box-shadow:
+        0 30px 80px
+        rgba(75,55,40,.10);
+
+}
+
+
+.featured-countdown::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    left: -140px;
+    top: -160px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(207,166,153,.12);
+
+}
+
+
+.featured-countdown::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    right: -120px;
+    bottom: -170px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(190,165,137,.12);
+
+}
+
+
+/* =========================================================
+   DECORATIONS
+========================================================= */
+
+.featured-decoration {
+
+    position: absolute;
+
+    color:
+        rgba(145,105,94,.18);
+
+    pointer-events: none;
+
+}
+
+
+.decoration-one {
+
+    left: 7%;
+
+    top: 20%;
+
+    font-size: 60px;
+
+    transform:
+        rotate(-15deg);
+
+}
+
+
+.decoration-two {
+
+    right: 9%;
+
+    top: 18%;
+
+    font-size: 32px;
+
+}
+
+
+/* =========================================================
+   FEATURED CONTENT
+========================================================= */
+
+.featured-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    min-height: 390px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 45px 25px;
+
+}
+
+
+.featured-label {
+
+    text-transform: uppercase;
+
+    letter-spacing:
+        .18em;
+
+    font-size: 11px;
+
+    color: #9b8175;
+
+    margin-bottom: 8px;
+
+}
+
+
+.featured-content h2 {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-weight: 400;
+
+    font-size:
+        clamp(
+            30px,
+            5vw,
+            52px
+        );
+
+    color: #40342e;
+
+}
+
+
+.featured-date {
+
+    margin-top: 8px;
+
+    font-size: 14px;
+
+    color: #88766c;
+
+}
+
+
+/* =========================================================
+   CLOCK
+========================================================= */
+
+.countdown-clock {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: clamp(8px, 2vw, 25px);
+
+    margin-top: 35px;
+
+}
+
+
+.time-unit {
+
+    min-width:
+        clamp(
+            60px,
+            9vw,
+            100px
+        );
+
+}
+
+
+.time-number {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(
+            32px,
+            5vw,
+            58px
+        );
+
+    line-height: 1;
+
+    color: #4b3d36;
+
+}
+
+
+.time-label {
+
+    margin-top: 9px;
+
+    text-transform: uppercase;
+
+    letter-spacing:
+        .12em;
+
+    font-size: 9px;
+
+    color: #9b8b82;
+
+}
+
+
+.time-separator {
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            25px,
+            4vw,
+            45px
+        );
+
+    color: #b59a8d;
+
+    transform:
+        translateY(-8px);
+
+}
+
+
+.featured-message {
+
+    margin-top: 28px;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 15px;
+
+    color: #92766b;
+
+}
+
+
+/* =========================================================
+   OTHER DATES SECTION
+========================================================= */
+
+.other-dates-section {
+
+    max-width: 1150px;
+
+    margin:
+        0 auto;
+
+}
+
+
+.section-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+}
+
+
+.section-heading h2 {
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-weight: 400;
+
+    font-size:
+        clamp(
+            22px,
+            3vw,
+            32px
+        );
+
+    text-align: center;
+
+    color: #51443d;
+
+}
+
+
+.heading-line {
+
+    height: 1px;
+
+    flex: 1;
+
+    max-width: 120px;
+
+    background:
+        rgba(100,75,55,.15);
+
+}
+
+
+.section-description {
+
+    text-align: center;
+
+    margin-top: 8px;
+
+    color: #918078;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   COUNTDOWN GRID
+========================================================= */
+
+.countdown-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0, 1fr)
+        );
+
+    gap: 18px;
+
+    margin-top: 30px;
+
+}
+
+
+/* =========================================================
+   COUNTDOWN CARD
+========================================================= */
+
+.countdown-card {
+
+    position: relative;
+
+    border: 0;
+
+    width: 100%;
+
+    min-height: 190px;
+
+    padding: 25px;
+
+    border-radius: 25px;
+
+    background:
+        rgba(255,255,255,.78);
+
+    border:
+        1px solid
+        rgba(100,75,55,.08);
+
+    box-shadow:
+        0 12px 35px
+        rgba(75,55,40,.06);
+
+    text-align: left;
+
+    cursor: pointer;
+
+    color: #40352f;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+
+}
+
+
+.countdown-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    background:
+        rgba(255,255,255,.98);
+
+    box-shadow:
+        0 20px 45px
+        rgba(75,55,40,.11);
+
+}
+
+
+.countdown-card:active {
+
+    transform:
+        translateY(-2px)
+        scale(.99);
+
+}
+
+
+.card-heart {
+
+    position: absolute;
+
+    right: 20px;
+
+    top: 18px;
+
+    font-size: 20px;
+
+    color: #b18b80;
+
+}
+
+
+.card-label {
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing:
+        .15em;
+
+    color: #a18d83;
+
+}
+
+
+.card-title {
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-weight: 400;
+
+    font-size: 25px;
+
+    margin-top: 8px;
+
+}
+
+
+.card-date {
+
+    font-size: 12px;
+
+    color: #928078;
+
+    margin-top: 4px;
+
+}
+
+
+.card-countdown {
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 6px;
+
+    margin-top: 22px;
+
+}
+
+
+.card-days {
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 30px;
+
+}
+
+
+.card-days-label {
+
+    font-size: 11px;
+
+    color: #938077;
+
+}
+
+
+/* =========================================================
+   ACTIVE CARD
+========================================================= */
+
+.countdown-card.active {
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5e9e1,
+            #fffaf6
+        );
+
+    border:
+        1px solid
+        rgba(150,110,95,.18);
+
+}
+
+
+.countdown-card.active::before {
+
+    content: "VIEWING";
+
+    position: absolute;
+
+    bottom: 17px;
+
+    right: 20px;
+
+    font-size: 8px;
+
+    letter-spacing:
+        .15em;
+
+    color: #a28378;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.countdown-footer {
+
+    max-width: 550px;
+
+    margin:
+        70px auto
+        0;
+
+    text-align: center;
+
+}
+
+
+.footer-heart {
+
+    font-size: 24px;
+
+    color: #a37b70;
+
+    margin-bottom: 12px;
+
+}
+
+
+.countdown-footer p {
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #897a72;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .countdown-grid {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .countdown-page {
+
+        padding:
+            20px
+            15px
+            50px;
+
+    }
+
+
+    .top-nav {
+
+        margin-bottom: 25px;
+
+    }
+
+
+    .nav-title {
+
+        font-size: 15px;
+
+    }
+
+
+    .featured-countdown {
+
+        min-height: 350px;
+
+        border-radius: 30px;
+
+    }
+
+
+    .featured-content {
+
+        min-height: 350px;
+
+        padding:
+            35px
+            15px;
+
+    }
+
+
+    .countdown-clock {
+
+        gap: 4px;
+
+    }
+
+
+    .time-unit {
+
+        min-width: 58px;
+
+    }
+
+
+    .time-number {
+
+        font-size: 30px;
+
+    }
+
+
+    .time-label {
+
+        font-size: 7px;
+
+        letter-spacing:
+            .08em;
+
+    }
+
+
+    .time-separator {
+
+        font-size: 22px;
+
+    }
+
+
+    .section-heading {
+
+        gap: 10px;
+
+    }
+
+
+    .heading-line {
+
+        display: none;
+
+    }
+
+
+    .countdown-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .countdown-card {
+
+        min-height: 165px;
+
+    }
+
+}
+
+
+@media (max-width: 380px) {
+
+    .time-unit {
+
+        min-width: 51px;
+
+    }
+
+
+    .time-number {
+
+        font-size: 27px;
+
+    }
+
+
+    .time-separator {
+
+        font-size: 18px;
+
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        scroll-behavior: auto !important;
+
+        transition:
+            none !important;
+
+    }
+
+}
